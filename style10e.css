@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #f06868;
+}
+
+header {
+    background-color: #fab57a;
+    font-family: "Nova Mono";
+    font-size: 20px;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    height: 80px;
+}
+
+a,
+li {
+    margin: 20px;
+    text-decoration: none;
+}
+
+div {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Monoton";
+    font-size: 40px;
+}
+
+.menu-hamburguesa {
+    display: none;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    body {
+        background-color: #edf798;
+    }
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        background-color: #80d6ff;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    li {
+        display: none
+    }
+    .menu-hamburguesa {
+        display: block;
+        margin-right: 20px;
+    }
+}
