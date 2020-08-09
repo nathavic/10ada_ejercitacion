@@ -1,0 +1,17 @@
+footer {
+    height: 500px;
+    background-color: rgb(55, 100, 185);
+}
+
+.hamburguesa {
+    display: none;
+}
+
+@media (min-width:600px) and (max-width:900px) {
+    footer {
+        background-color: rgb(75, 160, 107);
+    }
+    .hamburguesa {
+        display: block;
+    }
+}
